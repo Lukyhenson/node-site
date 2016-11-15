@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Node Site</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-inverse">
+        <a href="/" class="navbar-brand">NodeSite</a>
+        <ul class="nav navbar-nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+<!-- Main content HERE -->
+
+<%- defineContent('hero') %>
+
+<main>
+  <div class="container">
+    <%- defineContent('body') %>
+  </div>
+</main>
+
+  <footer>
+          Awesome Site Copyright &copy; 2016
+        </footer>
+  </body>
+</html>
